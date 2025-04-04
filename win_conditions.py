@@ -57,8 +57,12 @@ class winConditions:
 
                 i += 1
             
-            print(matchesFound)
-
-        return
+            # print(matchesFound)
+            if(matchesFound == 3):
+                return True
+        return False
     
-    CheckBoard([1, 1, 1, 0,0,0,0,0,0])
+    print(CheckBoard([1, 1, 1, 0,0,0,0,0,0]))
+    print(CheckBoard([0, 1, 1, 0,1,1,0,1,0]))
+    print(CheckBoard([1,1,1, 0,1,0, 0,0,1]))
+    print(CheckBoard([0,1,0, 0,0,1, 0,0,1]))
